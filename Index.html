@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reynold Abdala — Portfólio Profissional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-wrap">
+      <div class="brand">
+        <span class="name">Reynold — Portfólio</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Eu sou Reynold</h1>
+        <p class="lead">Técnico com experiência em <span class="texto">Eletricidade Industrial</span>, <span class="texto">Suporte Informático</span> e <span class="texto">Administração de Redes</span>.</p>
+        <p class="lead">
+          Sou estudante de Administração de Redes no ITC, apaixonado por redes de computadores, 
+          tecnologia e futebol. Atualmente no 2º ano, busco transformar desafios em soluções criativas, 
+          aprendendo sempre mais sobre informática e segurança digital.
+        </p>
+      </div>
+
+      <!-- Para mover a imagem, altere a classe para: img-left / img-right / img-center -->
+      <div class="hero-img img-right">
+        <img src="Imagem do WhatsApp de 2025-08-04 à(s) 21.37.35_302f4d00.jpg" alt="Foto de perfil de Reynold Abdala" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços: deslocada para aparecer abaixo do 'inicio' (não visível imediatamente no topo) -->
+  <section id="servicos" class="section">
+    <div class="wrap">
+      <h2>Serviços</h2>
+      <div class="cards">
+        <article class="card quadro">
+          <h3>Eletricidade Industrial</h3>
+          <p class="texto">Instalação residencial, fabrico de peças mecânicas, manutenção preventiva.</p>
+        </article>
+        <article class="card quadro">
+          <h3>Suporte Informático</h3>
+          <p class="texto">Formatação, instalação de sistemas operativos, configuração de impressoras e assistência a utilizadores.</p>
+        </article>
+        <article class="card quadro">
+          <h3>Administração de Redes</h3>
+          <p class="texto">Planeamento de LAN, configuração de switches e routers, endereçamento IP e políticas de backup.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="section dark">
+    <div class="wrap">
+      <h2>Projetos</h2>
+
+      <div class="galeria">
+        <!-- Ao clicar, o utilizador é levado à pasta /projetos/ -->
+        <a class="proj-link" href="/projetos/" target="_blank" rel="noopener noreferrer">
+          <figure>
+            <img src="Captura de Ecrã (10).png" alt="Quadro elétrico" />
+            <figcaption>Montagem de 40 Computadores para uma escola</figcaption>
+          </figure>
+        </a>
+
+        <a class="proj-link" href="/projetos/" target="_blank" rel="noopener noreferrer">
+          <figure>
+            <img src="Captura de tela 2025-10-19 192745.png" alt="Instalação industrial" />
+            <figcaption>Replicacao do Bilhete de Identidade</figcaption>
+          </figure>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="habilidades" class="section">
+    <div class="wrap">
+      <h2>Habilidades</h2>
+
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-head"><span>Eletricidade Industrial</span><span class="percent">40%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>Suporte Informático</span><span class="percent">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>Administração de Redes</span><span class="percent">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="wrap">
+      <h2>Contacto</h2>
+
+      <ul class="contact-list">
+        <li>📧 Email: <a href="mailto:reynoldfelizardoabdala99@gmail.com">reynoldfelizardoabdala99@gmail.com</a></li>
+        <li>💬 WhatsApp: <a href="https://wa.me/258852902000" target="_blank">+258 85 290 2000</a></li>
+        <li>📞 Telefone: <a href="tel:+258833932095">+258 83 393 2095</a></li>
+        <li>📸 Instagram: <a href="https://instagram.com/reynold_abdala99" target="_blank">@reynold_abdala99</a></li>
+        <li>📘 Facebook: <a href="https://facebook.com/reynold.felizardo.abdala" target="_blank">Reynold Felizardo Abdala</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2025 Reynold Abdala — Portfólio Profissional</small>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
